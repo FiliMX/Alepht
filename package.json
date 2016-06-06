@@ -1,4 +1,16 @@
 {
-  "name": "Alepht",
-  "version": "0.0.1"
+  "name": "alepht",
+  "version": "0.0.1",
+  "description": "The default theme for [Ghost](http://github.com/tryghost/ghost/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fili Santillán",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.4.0"
+  }
 }
