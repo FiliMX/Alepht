@@ -10,30 +10,37 @@
     .header__img
         width 45px
         
-.header__text
+.header__title
     font-size 1.6rem
     margin 0
     display inline-block
     color $color-light
     
-.header__text-logo--no
+.header__title-logo--no
     padding 0 0 0.2rem 0
     border-bottom 3px solid $color-blue-A
     
-.header__text-logo--yes
+.header__title-logo--yess
     vertical-align top
     margin 0.4rem 0 0 0.3rem
     
     
 .header__options
-    font-size 1.8rem
-    margin 0.5rem 0 0 0
-    .header__icon
+    margin 0.4rem 0 0 0
+    
+    .header__option
+        display inline-block
         color $color-light
         
         &:first-child
-            margin 0 0.5rem 0 0
-            
-        &:nth-child(2)
-            margin 0 0 0 0.5rem
+            margin 0 0.7rem 0 0
+        
+        .header__icon
+            font-size 1.4rem
+            display block
+            text-align center
+        
+        .header__text
+            font-weight 300
+            font-size 0.8rem
     
