@@ -1,10 +1,20 @@
 <header class='header'>
-    <a href='{{@blog.url}}'>
-        <figure class='header__alepht'>
-            <img src="" alt="" class='header__img'>
-            <figcaption class='header__title'>
-                <p class='header__text'>{{@blog.title}}</p>
-            </figcaption>
-        </figure>
-    </a>
+    <div class="flex-between">
+        <div class="header__logo">
+            <a href='{{@blog.url}}'>
+                {{#if @blog.logo}}
+                    <figure class='header__alepht'>
+                        <img src='{{@blog.logo}}' alt='{{@blog.title}}' class='header__img'>
+                    </figure>
+                {{/if}}
+
+                <p class='font-titillium header__text {{#if @blog.logo}}header__text-logo--yes{{else}}header__text-logo--no{{/if}}'>{{@blog.title}}</p>
+            </a>
+        </div>
+
+        <div class="header__options">
+            <a href="#" class="header__icon icon-about-us"></a>
+            <a href="#" class="header__icon icon-contact"></a>
+        </div>
+    </div>
 </header>
