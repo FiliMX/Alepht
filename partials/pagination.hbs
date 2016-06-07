@@ -1,0 +1,17 @@
+<div class="pagination" role="navigation">
+
+    {{#if prev}}
+        <a class="pagination__prev" href="{{page_url prev}}">
+            <i class="pagination__icon icon-arrow-left"></i>
+        </a>
+    {{/if}}
+    
+    <span class="pagination__number">Página <strong class="pagination__page">{{page}}</strong> de <strong class="pagination__page">{{pages}}</strong></span>
+
+    {{#if next}}
+        <a class="pagination__next" href="{{page_url next}}">
+            <i class="pagination__icon icon-arrow-right"></i>
+        </a>
+    {{/if}}
+    
+</div>
