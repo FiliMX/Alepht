@@ -16,12 +16,13 @@
     .loop__title
         margin 0 0 0.7rem 0
         line-height 2.2rem
+        font-size 2rem
         
         .loop__link
             color $color-dark
-            font-size 2rem
             
     .loop__author
+        display inline-block
         .loop__img
             width 33px
             border-radius 50%
@@ -39,4 +40,21 @@
     
     .loop__text
         line-height 1.5rem
-    
+        
+@media $mq-tablet-xs
+    .loop__header
+        .loop__title
+            .loop__link
+                font-size 2.2rem
+                
+@media $mq-tablet-sm
+    .loop__header
+        .loop__title
+            .loop__link
+                font-size 2.5rem
+                
+@media $mq-tablet-md
+    .loop__words
+        .loop__text
+            font-size 1.1rem
+            font-weight 300
