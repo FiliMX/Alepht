@@ -79,4 +79,22 @@
             
             .header__text
                 font-size 0.8rem
-    
+                
+@media $mq-tablet-md
+    .header__options
+        margin 0.4rem 0 0 0
+        
+    .header__list
+        .header__item
+        
+            &:nth-child(-n+4)
+                display inline-block
+                vertical-align top
+                margin 0.8rem 0.9rem 0 0
+                
+                .header__text
+                    font-size 1.1rem
+                
+            &:nth-child(4)
+                margin 0.8rem 1.5rem 0 0
+            
