@@ -1,6 +1,6 @@
 {{#author}}
 
-<section class='flex-center-vertical cover cover-author {{#if cover}} cover--yes' style='background-image: url({{cover}}){{else}}cover--no{{/if}}'>
+<section class='flex-center-vertical cover cover-author {{#if cover}} cover--yes cover--author--yes' style='background-image: url({{cover}}){{else}}cover--no{{/if}}'>
     <div class='container wrap-center'>
 
         <header class="cover-author__header">
@@ -15,7 +15,8 @@
             {{/if}} --}}
 
             <span class="cover-author__post">
-                <i class="cover-author__icon icon-post"></i> {{plural ../pagination.total empty='Sin artículos' singular='% Artículo' plural='% Artículos'}}
+                <i class="cover-author__icon icon-post"></i>
+                <span class="cover-author__text">{{plural ../pagination.total empty='Sin artículos' singular='% Artículo' plural='% Artículos'}}</span>
             </span>
 
         </header> 
