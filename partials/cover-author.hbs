@@ -4,15 +4,16 @@
     <div class='container wrap-center'>
 
         <header class="cover-author__header">
-            <h1 class='cover-author__title'>
-                {{name}}
-            </h1>
 
-            {{!-- {{#if image}}
+            {{#if image}}
             <figure class="cover-author__image">
                 <img src="{{image}}" alt="{{name}}" class="cover-author__img">
             </figure>
-            {{/if}} --}}
+            {{/if}}
+            
+            <h1 class='cover-author__title'>
+                {{name}}
+            </h1>
 
             <span class="cover-author__post">
                 <i class="cover-author__icon icon-post"></i>
@@ -58,7 +59,7 @@
 
         </footer>
 
-        <a href='#' class='cover__icon icon-arrow-down'></a>
+        <a href='#' class='cover__icon cover-author__icon-arrow icon-arrow-down'></a>
 
     </div>
 </section>

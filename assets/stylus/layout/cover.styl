@@ -36,59 +36,62 @@
         height 100vh
         z-index -1
         
-.cover-author
-    .cover-author__header
-        .cover-author__title
-        .cover-author__post
-            padding 0 0 0 1.5rem
-            
-        .cover-author__title
-            font-size 2rem
-            margin 0 0 0.5rem 0
-            
-        .cover-author__post
-            .cover-author__icon
-                font-size 1.1rem
-                margin 0 0.2rem 0 0
-                
-            .cover-author__text
-                vertical-align 11%
-                
-    .cover-author__bio
-        .cover-author__description
-            padding 0 1.5rem
-            font-weight 300
-            font-size 0.9rem
-                
-    .cover-author__footer
+.cover-author__header
+    
+    .cover-author__image
+        display none
         
-        .cover-author__location
-        .cover-author__website
-        .cover-author__facebook
-        .cover-author__twitter
-            padding 0 0 0 1.5rem
-            display block
-            margin 0 0 0.5rem 0
+    .cover-author__title
+    .cover-author__post
+        padding 0 0 0 1.5rem
+        
+    .cover-author__title
+        font-size 2rem
+        margin 0 0 0.5rem 0
+        
+    .cover-author__post
+        .cover-author__icon
+            font-size 1.1rem
+            margin 0 0.2rem 0 0
             
-            .cover-author__icon
-                font-size 1.1rem
-                margin 0 0.2rem 0 0
+        .cover-author__text
+            vertical-align 11%
                 
-            .cover-author__text
-                vertical-align 11%
+.cover-author__bio
+    .cover-author__description
+        padding 0 1.5rem
+        font-weight 300
+        font-size 0.9rem
                 
-            .cover-author__link
-                color $color-blue-B
-                vertical-align 11%
-                display inline-block
-                padding 0 0 0.1rem 0
-                border-bottom 1px dashed $color-blue-B
-                
-        .cover-author__website
-            margin 0 0 1.5rem 0
+.cover-author__footer
+    
+    .cover-author__location
+    .cover-author__website
+    .cover-author__facebook
+    .cover-author__twitter
+        padding 0 0 0 1.5rem
+        display block
+        margin 0 0 0.5rem 0
+        
+        .cover-author__icon
+            font-size 1.1rem
+            margin 0 0.2rem 0 0
             
-        .cover-author__twitter
-            margin 0 0 2.5rem 0
+        .cover-author__text
+            vertical-align 11%
+            
+        .cover-author__link
+            color $color-blue-B
+            vertical-align 11%
+            display inline-block
+            padding 0 0 0.1rem 0
+            border-bottom 1px dashed $color-blue-B
+            
+    .cover-author__website
+        margin 0 0 1.5rem 0
+        
+    .cover-author__twitter
+        margin 0 0 2.5rem 0
             
 @media $mq-phone-md
     .cover
@@ -99,44 +102,42 @@
         .cover__icon
             font-size 2.5rem
             
-    .cover-author
-        .cover-author__header
-            .cover-author__title
-                font-size 2.5rem
-                margin 0 0 0.2rem 0
-                
-            .cover-author__post
-                margin 0 0 1.5rem 0
-                display inline-block
-                
-        .cover-author__bio
-            .cover-author__description
-                margin 0 0 1.5rem 0
+    .cover-author__header
+        .cover-author__title
+            font-size 2.5rem
+            margin 0 0 0.2rem 0
+            
+        .cover-author__post
+            margin 0 0 1.5rem 0
+            display inline-block
+            
+    .cover-author__bio
+        .cover-author__description
+            margin 0 0 1.5rem 0
             
 @media $mq-phone-lg
     .cover
         .cover__description
             font-size 1rem
             
-    .cover-author
-        .cover-author__bio
-            .cover-author__description
-                font-size 1rem
+    .cover-author__bio
+        .cover-author__description
+            font-size 1rem
+            
+    .cover-author__footer
+        .cover-author__location
+        .cover-author__website
+        .cover-author__facebook
+        .cover-author__twitter
+            
+            .cover-author__icon
+                font-size 1.2rem
                 
-        .cover-author__footer
-            .cover-author__location
-            .cover-author__website
-            .cover-author__facebook
-            .cover-author__twitter
+            .cover-author__text
+                font-size 1.1rem
                 
-                .cover-author__icon
-                    font-size 1.2rem
-                    
-                .cover-author__text
-                    font-size 1.1rem
-                    
-                .cover-author__link
-                    font-size 1.1rem
+            .cover-author__link
+                font-size 1.1rem
             
 @media $mq-tablet-sm
     .cover
@@ -150,22 +151,21 @@
         .cover__icon
             font-size 2.8rem
             
-    .cover-author
-        .cover-author__header
-            .cover-author__title
-                font-size 3rem
+    .cover-author__header
+        .cover-author__title
+            font-size 3rem
+            
+        .cover-author__post
+            .cover-author__icon
+                font-size 1.2rem
                 
-            .cover-author__post
-                .cover-author__icon
-                    font-size 1.2rem
-                    
-                .cover-author__text
-                    font-size 1.1rem
-                    
-        .cover-author__bio
-            .cover-author__description
+            .cover-author__text
                 font-size 1.1rem
-                line-height 1.5rem
+                
+    .cover-author__bio
+        .cover-author__description
+            font-size 1.1rem
+            line-height 1.5rem
             
 @media $mq-desktop-xs
     .cover
@@ -173,5 +173,42 @@
         
         .cover__title
             font-size 5rem
+            
+    .cover-author
+        text-align left
+        height 60vh
+        
+        .cover-author__icon-arrow
+            display none
+        
+    .cover-author__footer
+        .cover-author__location
+        .cover-author__website
+        .cover-author__facebook
+        .cover-author__twitter
+            display inline-block
+            
+    .cover--author--yes
+        &:before
+            height 60vh
+            
+@media $mq-desktop-sm
+
+    .cover-author__header
+        position relative
+        border-left 4px solid $color-blue-B
+        
+        .cover-author__image
+            display block
+            position absolute
+            top 1.5rem
+            left -6rem
+            opacity 0.8
+            
+            .cover-author__img
+                width 75px
+                border-radius 50%
+            
+
             
     
