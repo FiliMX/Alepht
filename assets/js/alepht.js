@@ -1,5 +1,37 @@
-// Disqus
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#navigation-mobile').outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    if (st > lastScrollTop && st > navbarHeight){
+        $('#navigation-mobile').removeClass('navigation-mobile-inactive').addClass('navigation-mobile-active');
+    } else {
+        if(st + $(window).height() < $(document).height()) {
+            $('#navigation-mobile').removeClass('navigation-mobile-active').addClass('navigation-mobile-inactive');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+// Disqus
 disqus = function (newIdentifier, newUrl, newTitle) {
     if ($('#disqus_thread').length) {
         if (typeof DISQUS === 'undefined') {
