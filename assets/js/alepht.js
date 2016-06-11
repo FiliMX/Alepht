@@ -21,10 +21,10 @@ function hasScrolled() {
         return;
 
     if (st > lastScrollTop && st > navbarHeight){
-        $('#navigation-mobile').removeClass('navigation-mobile-inactive').addClass('navigation-mobile-active');
+        $('#navigation-mobile').removeClass('navigation-mobile-active').addClass('navigation-mobile-inactive');
     } else {
         if(st + $(window).height() < $(document).height()) {
-            $('#navigation-mobile').removeClass('navigation-mobile-active').addClass('navigation-mobile-inactive');
+            $('#navigation-mobile').removeClass('navigation-mobile-inactive').addClass('navigation-mobile-active');
         }
     }
     
