@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
     path = {},
     stylusTasks = ['styles'];
 
@@ -20,4 +21,12 @@ gulp.task('styles', function () {
     }))
     .pipe(rename('styles.css'))
     .pipe(gulp.dest('./assets/css/'));
+});
+
+gulp.task('concat', function(){
+    gulp
+        .src('assets/js-dev/**/*.js')
+        .pipe(concat('index.js'))
+        .pipe(gulp.dest('assets/js/'));
+
 });
