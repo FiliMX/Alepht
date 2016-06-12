@@ -1,5 +1,5 @@
 <section class='flex-center-vertical cover {{#if @blog.cover}} cover--yes' style='background-image: url({{@blog.cover}}){{else}}cover--no{{/if}}'>
-    <div class='container wrap-center'>
+    <div class='container-cover wrap-center'>
         <h1 class='cover__title'>
             {{@blog.title}}
         </h1>
@@ -7,6 +7,6 @@
             {{@blog.description}}
         </p>
 
-        <a href='#' class='cover__icon icon-arrow-down'></a>
+        <a href='#main' class='cover__icon icon-arrow-down'></a>
     </div>
 </section>

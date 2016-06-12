@@ -6,7 +6,7 @@ a[class*=btn-]
     transition 0.3s
 
 .btn-light
-    button-style($color-light, none, $color-light)
+    button-style($color-light, none, $color-light)        
     
 .btn-blue-A
     button-style($color-blue-A, none, $color-blue-A)
@@ -26,5 +26,11 @@ a[class*=btn-]
 .btn-blue-B-bg
     button-style(none, $color-blue-B, $color-light)
     
+    &:hover
+        button-style(none, $color-dark, $color-light)
+    
 .btn-dark-bg
     button-style(none, $color-dark, $color-light)
+    
+    &:hover
+        button-style(none, $color-light, $color-dark)

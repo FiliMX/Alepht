@@ -21,6 +21,15 @@
         display block
         text-align center
         font-size 2rem
+        animation float 1.8s ease-out infinite
+        
+    @keyframes float
+        50%
+            transform translate(0, 20px)
+            
+.container-cover
+    width 100%
+    box-sizing border-box
         
 .cover--no
     background-color $color-dark
@@ -40,9 +49,6 @@
 .cover-author__header
     
     .cover-author__image
-        display none
-        
-    .cover-tag__svg
         display none
         
     .cover-author__title
@@ -231,6 +237,13 @@
         .cover-author__twitter
             display inline-block
             
+            .cover-author__link
+                transition 0.3s
+                
+                &:hover
+                    color $color-blue-A
+                    border-bottom 1px dashed $color-blue-A
+                
     .cover--author--yes
         &:before
             height 60vh
@@ -250,11 +263,14 @@
                 margin 1.9rem 0.5em 0 0
                 font-size 1.2rem
                 color $color-light
+                transition 0.3s
+                
+                &:hover
+                    color $color-blue-B
             
 @media $mq-desktop-sm
 
     .cover-author__header
-        position relative
         border-left 4px solid $color-blue-B
         
         .cover-author__image
@@ -267,15 +283,3 @@
             .cover-author__img
                 width 75px
                 border-radius 50%
-                
-        .cover-tag__svg
-            display block
-            position absolute
-            font-size 2.5rem
-            top 0.8rem
-            left -3rem
-            
-            
-
-            
-    
