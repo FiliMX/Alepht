@@ -35,6 +35,17 @@ section[class*='center-vertical'],
 article[class*='center-vertical']
     align-items center
     
+.arrow-up
+    position fixed
+    z-index 99
+    bottom 0
+    right 1rem
+    background-color $color-dark
+    color $color-light
+    border-radius 3px 3px 0 0
+    font-size 1.3rem
+    padding 0.7rem 0.9rem
+    
 .video
     height 0
     overflow hidden
@@ -61,6 +72,13 @@ article[class*='center-vertical']
 @media $mq-desktop-xs
     .wrap-center
         max-width 800px
+        
+    .arrow-up
+        right 3rem
+        transition 0.3s
+        
+        &:hover
+            background-color $color-blue-A
         
 @media $mq-desktop-sm
     .wrap-center
