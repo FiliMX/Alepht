@@ -2,10 +2,15 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     rename = require('gulp-rename'),
+    cmq  = require('gulp-combine-media-queries'),
+    autoprefixer = require('gulp-autoprefixer'),
+    minifyCss = require('gulp-minify-css'),
     concat = require('gulp-concat'),
-    minify = require('gulp-minify'),
+    minify = require('gulp-minify');
     path = {},
     stylusTasks = ['styles'];
+
+// ----------- $CSS -----------
 
 // Watch
 path.watch = {
@@ -25,8 +30,38 @@ gulp.task('styles', function () {
             compress: true
         }))
         .pipe(rename('styles.css'))
+        .pipe(gulp.dest('./dev/css/'));
+});
+
+// Task (combine media queries)
+gulp.task('cmq', function () {
+  gulp.src('./dev/css/*.css')
+    .pipe(cmq({
+      log: true
+    }))
+    .pipe(gulp.dest('./dev/css/'));
+});
+
+// Task (autoprefixer)
+gulp.task('autoprefixer', function () {
+    return gulp.src('./dev/css/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: true
+        }))
+        .pipe(minifyCss())
         .pipe(gulp.dest('./assets/css/'));
 });
+
+// Task (cmq) + (autoprefixer)
+gulp.task('transform-css', ['cmq', 'autoprefixer']);
+
+
+
+
+
+
+// ----------- $JavaScript -----------
 
 // Task (concat)
 gulp.task('concat', function() {
