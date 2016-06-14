@@ -1,40 +1,18 @@
-ul[class*='list'],
-ol[class*='list']
-    list-style none
-    margin 0
-    padding 0
-    
+/*------------------------------------*\
+    5. $OCSS
+\*------------------------------------*/
+
+// ----------- $Elements -----------
+
+// Font titillium class
 .font-titillium
     font-family $font-titillium
     
+// Font Lato class
 .font-lato
     font-family $font-lato
     
-div[class*='flex-'],
-section[class*='flex-'],
-article[class*='flex-']
-    display flex
-
-div[class*='between'],
-section[class*='between'],
-article[class*='between']
-    justify-content space-between
-    
-div[class*='around'],
-section[class*='around'],
-article[class*='around']
-    justify-content space-around
-    
-div[class*='center-horizontal'],
-section[class*='center-horizontal'],
-article[class*='center-horizontal']
-    justify-content center
-    
-div[class*='center-vertical'],
-section[class*='center-vertical'],
-article[class*='center-vertical']
-    align-items center
-    
+// Arrow up class
 .arrow-up
     position fixed
     z-index 99
@@ -46,6 +24,7 @@ article[class*='center-vertical']
     font-size 1.3rem
     padding 0.7rem 0.9rem
     
+// Video responsive class
 .video
     height 0
     overflow hidden
@@ -63,16 +42,76 @@ article[class*='center-vertical']
         position absolute
         top 0
         width 100%
+
+
+
+
+
+// ----------- $Lists -----------
+        
+// Lists with class (list)
+ul[class*='list'],
+ol[class*='list']
+    list-style none
+    margin 0
+    padding 0
+
+
+
+
+
+// ----------- $FlexBox -----------
+    
+// Elements with class (flex-)
+div[class*='flex-'],
+section[class*='flex-'],
+article[class*='flex-']
+    display flex
+
+// Elements with class (between)
+div[class*='between'],
+section[class*='between'],
+article[class*='between']
+    justify-content space-between
+    
+// Elements with class (around)
+div[class*='around'],
+section[class*='around'],
+article[class*='around']
+    justify-content space-around
+    
+// Elements with class (center-horizontal)
+div[class*='center-horizontal'],
+section[class*='center-horizontal'],
+article[class*='center-horizontal']
+    justify-content center
+
+// Elements with class (center-vertical)
+div[class*='center-vertical'],
+section[class*='center-vertical'],
+article[class*='center-vertical']
+    align-items center
+
+
+
+
+
+// ----------- $Media queries -----------
     
 @media $mq-tablet-md
+
+    // Wrap-center class
     .wrap-center
         margin 0 auto
         max-width 680px
         
 @media $mq-desktop-xs
+
+    // Wrap-center class
     .wrap-center
         max-width 800px
-        
+    
+    // Arrow-up class
     .arrow-up
         right 3rem
         transition 0.3s
@@ -81,5 +120,7 @@ article[class*='center-vertical']
             background-color $color-blue-A
         
 @media $mq-desktop-sm
+
+    // Wrap-center class
     .wrap-center
         max-width 750px

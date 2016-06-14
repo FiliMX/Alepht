@@ -1,3 +1,8 @@
+/*------------------------------------*\
+    7. $Navigation-mobile
+\*------------------------------------*/
+
+// Navigation mobile
 .navigation-mobile
     position fixed
     z-index 100
@@ -8,26 +13,39 @@
     background-color $color-light
     transition bottom 0.2s ease-in-out
     
+// Navigation mobile list (ul)
 .navigation-mobile__list
     display flex
     justify-content space-around
-
+    
+// Navigation mobile item (li)
 .navigation-mobile__item
     text-align center
+    
+    // Navigation mobile icon (i)
     .navigation-mobile__icon
         display block
         font-size 1.5rem
         color $color-gray-C
-        
+    
+    // Navigation mobile text (span)
     .navigation-mobile__text
         font-size 0.9rem
         font-weight 300
         color $color-gray-C
         
+// Navigation-mobile active (scroll up)
 .navigation-mobile-active
     bottom 0
-        
+
+
+
+
+// ----------- $Media queries -----------
+
 @media $mq-tablet-md
+    
+    // Navigation-mobile (none)
     .navigation-mobile
         display none
     

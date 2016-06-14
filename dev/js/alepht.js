@@ -1,7 +1,9 @@
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('#navigation-mobile').outerHeight();
+// Scroll (navigation-mobile)
+
+var didScroll,
+    lastScrollTop = 0,
+    delta = 5,
+    navbarHeight = $('#navigation-mobile').outerHeight();
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -31,15 +33,15 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-// Disqus
+// Disqus (comments)
 disqus = function (newIdentifier, newUrl, newTitle) {
     if ($('#disqus_thread').length) {
         if (typeof DISQUS === 'undefined') {
 
-            var disqus_shortname = 'alepht';
-            var disqus_identifier = newIdentifier;
-            var disqus_url = newUrl;
-            var disqus_title = newTitle;
+            var disqus_shortname = 'alepht',
+                disqus_identifier = newIdentifier,
+                disqus_url = newUrl,
+                disqus_title = newTitle;
 
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

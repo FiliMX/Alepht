@@ -1,3 +1,8 @@
+/*------------------------------------*\
+    6. $Buttons
+\*------------------------------------*/
+
+// Elements with class (btn-)
 button[class*=btn-],
 a[class*=btn-]
     padding 0.5rem 1.5rem
@@ -5,30 +10,50 @@ a[class*=btn-]
     font-weight 300
     transition 0.3s
 
+
+
+
+
+// ----------- $Buttons (simple) -----------
+
+// Button light
 .btn-light
-    button-style($color-light, none, $color-light)        
-    
+    button-style($color-light, none, $color-light)
+
+// Button blue A
 .btn-blue-A
     button-style($color-blue-A, none, $color-blue-A)
     
+// Button blue B
 .btn-blue-B
     button-style($color-blue-B, none, $color-blue-B)
-        
+    
+// Button gray A
 .btn-gray-A
     button-style($color-gray-A, none, $color-gray-A)
     
+// Button gray B
 .btn-gray-B
     button-style($color-gray-B, none, $color-gray-B)
     
+// Button dark
 .btn-dark
     button-style($color-dark, none, $color-dark)
+
+
+
+
+
+// ----------- $Buttons (background) -----------
     
+// Button blue B (background)
 .btn-blue-B-bg
     button-style(none, $color-blue-B, $color-light)
     
     &:hover
         button-style(none, $color-dark, $color-light)
-    
+
+// Button dark (brackground)
 .btn-dark-bg
     button-style(none, $color-dark, $color-light)
     

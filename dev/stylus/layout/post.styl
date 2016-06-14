@@ -1,25 +1,37 @@
+/*------------------------------------*\
+    12. $Post
+\*------------------------------------*/
+
+// Post & comments
 .write-post
 .comments
     padding 1rem
     
+// Post
 .write-post
     
+    // Paragraphs & lists
     p
     ul
     ol
         color $color-gray-B
         line-height 1.5rem
         
+    // Links
     a
         color $color-blue-A
         
+
+    // Images    
     img
         width 100%
         
-        
+    
+    // Strongs
     strong
         color $color-dark
         
+    // Headings
     h2
     h3
     h4
@@ -37,7 +49,8 @@
         
     h3
         font-size 1.4rem
-        
+
+    // Blockquote
     blockquote
         color $color-gray-A
         border-left 3px solid $color-gray-A
@@ -46,27 +59,38 @@
         
         p
             color $color-gray-A
-        
+    
+    // Break
     hr
         background-color $color-gray-A
         
+    // Code (simple)
     code
         background-color $color-code
         font-size 1rem
         color $color-gray-B
         padding 0.1rem
         border-radius 3px
-        
-        
+
+
+
+
+
+// ----------- $Media queries -----------
+
 @media $mq-tablet-xs
+
+    // Post
     .write-post
-    
+        
+        // Headings
         h2
             font-size 2.1rem
                 
         h3
             font-size 1.6rem
-            
+        
+        // Images
         img
             width auto
             margin 0 auto
@@ -75,23 +99,30 @@
             
 
 @media $mq-tablet-sm
+    // Post
     .write-post
+        
+        // Images
         img
             max-width 610px
             
 @media $mq-tablet-md
+    
+    // Post & comments
     .write-post
     .comments
         padding 2rem 0
-        
+
+    // Post
     .write-post
         
-        p
+        // Paragraphs & lists
         p
         ul
         ol
             font-size 1.1rem
-        
+
+        // Headings
         h2
             font-size 2.3rem
             line-height 3.2rem
@@ -100,27 +131,36 @@
             font-size 1.9rem
             line-height 3.2rem
             
+        // Images
         img
             max-width 680px
             
 @media $mq-desktop-xs
+
+    // Post
     .write-post
-        p
+        
+        // Paragraphs & lists
         p
         ul
         ol
             line-height 1.8rem
-            
+        
+        // Headings
         h2
             font-size 2.5rem
         
         h3
             font-size 2rem
             
+        // Images
         img
             max-width 800px
         
 @media $mq-desktop-sm
+    // Post
     .write-post
+        
+        // Images
         img
             max-width 750px

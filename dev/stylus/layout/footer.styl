@@ -1,18 +1,31 @@
+/*------------------------------------*\
+    14. $Footer
+\*------------------------------------*/
+
+// Footer
 .footer
     background $color-dark
     padding 1.5rem 1.5rem
     text-align center
 
+// Footer social
 .footer__social
     margin 0 0 1rem 0
+
+// Footer social list (ul)
 .footer__list
+    
+    // Footer social item (li)
     .footer__item
         display inline-block
         margin 0 0.5rem
+        
+        // Footer social icon
         .footer__icon
             color $color-blue-A
             font-size 2rem
-            
+
+// Footer copyright
 .footer__copyright
     color $color-light
     font-weight 300
@@ -27,20 +40,32 @@
             padding 0 0 0.1rem 0
             border-bottom 1px dashed $color-blue-A
             letter-spacing 1px
-            
+
+
+
+
+
+// ----------- $Media queries -----------
+
 @media $mq-desktop-xs
+
+    // Footer
     .footer 
         padding 3rem 1.5rem
-        
+    
+    // Footer social list (ul)
     .footer__list
+        // Footer social item (li)
         .footer__item
+            // Footer social icon
             .footer__icon
                 transition 0.3s
                 
                 &:hover
                     color $color-blue-C
-                    
-    .footer__copyright        
+    
+    // Footer copyright
+    .footer__copyright
         .footer__text
             .footer__link
                 transition 0.3s
