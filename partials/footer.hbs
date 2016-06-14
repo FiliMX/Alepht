@@ -1,24 +1,27 @@
-<footer class="footer">
-    <section class="footer__social">
-        <ul class="footer__list">
-            <li class="footer__item">
-                <a href="{{facebook_url}}" target='_blank' class="footer__icon icon-facebook"></a>
+{{!-- Footer --}}
+<footer class='footer'>
+
+    {{!-- Social networks --}}
+    <section class='footer__social'>
+        <ul class='footer__list'>
+            
+            {{!-- Facebook --}}
+            <li class='footer__item'>
+                <a href='{{facebook_url}}' target='_blank' class='footer__icon icon-facebook'></a>
             </li>
-            <li class="footer__item">
-                <a href="{{twitter_url}}" target='_blank' class="footer__icon icon-twitter"></a>
+            
+            {{!-- Twitter --}}
+            <li class='footer__item'>
+                <a href='{{twitter_url}}' target='_blank' class='footer__icon icon-twitter'></a>
             </li>
         </ul>
     </section>
-
-    <section class="footer__copyright">
-        <span class="footer__text">
-            <a href="{{@blog.url}}" class='footer__link'>{{@blog.title}}</a> &copy; {{date format="YYYY"}} Todos los derechos reservados
+    
+    {{!-- Copyright --}}
+    <section class='footer__copyright'>
+        <span class='footer__text'>
+            <a href='{{@blog.url}}' class='footer__link'>{{@blog.title}}</a> &copy; {{date format='YYYY'}} Todos los derechos reservados
         </span>
     </section>
-
-    <section class="footer__navigation">
-        
-    </section>
-
 
 </footer>

@@ -1,3 +1,4 @@
+// Dependencies Gulp
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     rename = require('gulp-rename'),
@@ -6,14 +7,17 @@ var gulp = require('gulp'),
     path = {},
     stylusTasks = ['styles'];
 
+// Watch
 path.watch = {
     stylus: ['./dev/stylus/**/*.styl']
 };
 
+// Task (watch)
 gulp.task('watch', function () {
     gulp.watch(path.watch.stylus, stylusTasks);
 });
 
+// Task (styles)
 gulp.task('styles', function () {
     gulp
         .src('./dev/stylus/main.styl')
@@ -24,6 +28,7 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./assets/css/'));
 });
 
+// Task (concat)
 gulp.task('concat', function() {
     gulp
         .src('./dev/js/**/**.js')
@@ -32,6 +37,7 @@ gulp.task('concat', function() {
 
 });
 
+// Task (minify)
 gulp.task('minify', function(){
     gulp
         .src('./assets/js/index.js')

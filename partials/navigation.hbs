@@ -1,8 +1,12 @@
+{{!-- Navigation --}}
+
 {{#foreach navigation}}
-    <li class="header__item nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
-        <a href="{{url absolute="true"}}" class="header__option">
-            <span class="header__text header__text--no-icon">{{label}}</span>
+
+    <li class='header__item nav-{{slug}}{{#if current}} nav-current{{/if}}' role='presentation'>
+        <a href='{{url absolute="true"}}' class='header__option'>
+            <span class='header__text header__text--no-icon'>{{label}}</span>
         </a>
     </li>
+
 {{/foreach}}
 

@@ -1,11 +1,16 @@
+{{!-- Default template --}}
 {{!< default}}
 
+{{!-- Cover template --}}
 {{> 'cover'}}
 
+{{! Posts of index }}
 <main class='loop-content wrap-center' role='main' id='main'>
-
+    
+    {{! Posts (loop) }}
     {{> 'loop'}}
 
 </main>
 
+{{! Pagination template }}
 {{pagination}}

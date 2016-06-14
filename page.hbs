@@ -1,29 +1,22 @@
+{{!-- Default template --}}
 {{!< default}}
 
+{{!-- Post block --}}
 {{#post}}
 
+{{!-- Cover template --}}
 {{> 'cover-page'}}
 
-<main class="content" role="main" id='main'>
-    <article class="write-post wrap-center">
-
-        <section class="post__content">
+{{! Static page (structure) }}
+<main class='content' role='main' id='main'>
+    
+    {{! Static page (content) }}
+    <article class='write-post wrap-center'>
+        
+        {{! Content }}
+        <section class='post__content'>
             {{content}}
         </section>
-
-        <footer class="post__footer">
-
-
-{{!--             {{#if @labs.subscribers}}
-            <section class="gh-subscribe">
-                <h3 class="gh-subscribe-title">Subscribe to {{@blog.title}}</h3>
-                <p>Get the latest posts delivered right to your inbox.</p>
-                {{subscribe_form placeholder="Your email address"}}
-                <span class="gh-subscribe-rss">or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> with Feedly!</span>
-            </section>
-            {{/if}} --}}
-
-        </footer>
 
     </article>
 
