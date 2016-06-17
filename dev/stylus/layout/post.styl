@@ -71,6 +71,18 @@
         color $color-gray-B
         padding 0.1rem
         border-radius 3px
+
+    // Addthis
+    .addthis--top
+    .addthis--bottom
+        text-align center
+        
+        a
+            margin 0 0.8rem 0 0
+    
+    // Social title (share)
+    .social-title
+        display none
         
     // Special buttons
     .custom-buttons
@@ -131,6 +143,17 @@
             // Button
             .button
                 width 30%
+        
+        // Addthis
+        .addthis--bottom
+            text-align left
+        
+        // Social title (share)
+        .social-title
+            display block
+            font-size 1.5rem
+            margin 2.5rem 0 1rem 0
+            color $color-dark
 
 @media $mq-tablet-sm
     // Post
@@ -199,6 +222,10 @@
             .button
                 &:hover
                     transform scale(1.1)
+        
+        // Social title (share)
+        .social-title
+            font-size 1.7rem
         
 @media $mq-desktop-sm
     // Post
