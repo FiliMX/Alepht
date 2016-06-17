@@ -9,17 +9,20 @@ var gulp = require('gulp'),
     minify = require('gulp-minify');
     path = {},
     stylusTasks = ['styles'];
+    transformCSSTasks = ['cmq', 'autoprefixer'];
 
 // ----------- $CSS -----------
 
 // Watch
 path.watch = {
-    stylus: ['./dev/stylus/**/*.styl']
+    stylus: ['./dev/stylus/**/*.styl'],
+    transformCSS: ['./dev/css/**/*.css']
 };
 
 // Task (watch)
 gulp.task('watch', function () {
     gulp.watch(path.watch.stylus, stylusTasks);
+    gulp.watch(path.watch.transformCSS, transformCSSTasks);
 });
 
 // Task (styles)
@@ -52,10 +55,6 @@ gulp.task('autoprefixer', function () {
         .pipe(minifyCss())
         .pipe(gulp.dest('./assets/css/'));
 });
-
-// Task (cmq) + (autoprefixer)
-gulp.task('transform-css', ['cmq', 'autoprefixer']);
-
 
 
 

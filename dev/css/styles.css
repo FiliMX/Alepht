@@ -6187,6 +6187,38 @@ pre[class*="language-"] {
 	border-radius: 3px;
 }
 
+.write-post .custom-buttons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.write-post .custom-buttons .button {
+	color: #fff;
+	padding: 1rem 1.5rem;
+	width: 100%;
+	margin: .5rem 0;
+	transition: .3s;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+.write-post .custom-buttons .button:nth-child(odd) {
+	background-color: #1b98e0;
+	color: #e8f1f2;
+}
+
+.write-post .custom-buttons .button:nth-child(even) {
+	background-color: #1e252a;
+	color: #e8f1f2;
+}
+
+.write-post .custom-buttons .button:active {
+	transform: scale(.9);
+}
+
 .pagination {
 	text-align: center;
 	padding: 1rem 0;
@@ -6364,6 +6396,14 @@ pre[class*="language-"] {
 	margin: 0 auto;
 	display: block;
 	max-width: 550px;
+}
+
+.write-post .custom-buttons {
+	margin: 1.5rem 0;
+}
+
+.write-post .custom-buttons .button {
+	width: 30%;
 }
 
 }
@@ -6603,6 +6643,14 @@ pre[class*="language-"] {
 
 .write-post img {
 	max-width: 800px;
+}
+
+.write-post .custom-buttons {
+	margin: 2.5rem 0;
+}
+
+.write-post .custom-buttons .button:hover {
+	transform: scale(1.1);
 }
 
 .pagination .pagination__prev,

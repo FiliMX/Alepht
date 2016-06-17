@@ -71,8 +71,35 @@
         color $color-gray-B
         padding 0.1rem
         border-radius 3px
-
-
+        
+    // Special buttons
+    .custom-buttons
+        display flex
+        justify-content space-around
+        flex-wrap wrap
+        margin 1rem 0
+        text-align center
+        
+        // Button
+        .button
+            color white
+            padding 1rem 1.5rem
+            width 100%
+            margin 0.5rem 0
+            transition 0.3s
+            text-transform uppercase
+            box-sizing border-box
+            
+            &:nth-child(odd)
+                background-color $color-blue-A
+                color $color-light
+                
+            &:nth-child(even)
+                background-color $color-dark
+                color $color-light
+                
+            &:active
+                transform scale(0.9)
 
 
 
@@ -97,6 +124,13 @@
             display block
             max-width 550px
             
+        // Special buttons
+        .custom-buttons
+            margin 1.5rem 0
+            
+            // Button
+            .button
+                width 30%
 
 @media $mq-tablet-sm
     // Post
@@ -156,6 +190,15 @@
         // Images
         img
             max-width 800px
+            
+        // Special buttons
+        .custom-buttons
+            margin 2.5rem 0
+            
+            // Button
+            .button
+                &:hover
+                    transform scale(1.1)
         
 @media $mq-desktop-sm
     // Post
