@@ -170,6 +170,7 @@ io | io.js
 ionic | ionic
 java | java
 javascript | javascript
+linux | linux
 magento | magento
 mailchimp | mailchimp
 mailgun | mailgun

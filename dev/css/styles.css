@@ -3336,6 +3336,10 @@ body[class*=' tag-']:before {
 	color: #000;
 }
 
+.tag-linux:before {
+	content: "\e94c";
+}
+
 .tag-magento:before {
 	content: "\eb58";
 	color: #d15b38;
