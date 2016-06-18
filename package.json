@@ -1,6 +1,6 @@
 {
   "name": "alepht",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "The default theme for [Ghost](http://github.com/tryghost/ghost/).",
   "main": "index.js",
   "scripts": {

@@ -1150,54 +1150,54 @@ body[class*=' tag-']:before {
 	color: #000;
 }
 
-.tag-css3 .path1:before {
+.tag-css .path1:before {
 	content: "\e997";
 	color: #264de4;
 }
 
-.tag-css3 .path2:before {
+.tag-css .path2:before {
 	content: "\e998";
 	margin-left: -.708984375em;
 	color: #2965f1;
 }
 
-.tag-css3 .path3:before {
+.tag-css .path3:before {
 	content: "\e999";
 	margin-left: -.708984375em;
 	color: #ebebeb;
 }
 
-.tag-css3 .path4:before {
+.tag-css .path4:before {
 	content: "\e99a";
 	margin-left: -.708984375em;
 	color: #ebebeb;
 }
 
-.tag-css3 .path5:before {
+.tag-css .path5:before {
 	content: "\e99b";
 	margin-left: -.708984375em;
 	color: #ebebeb;
 }
 
-.tag-css3 .path6:before {
+.tag-css .path6:before {
 	content: "\e99c";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-css3 .path7:before {
+.tag-css .path7:before {
 	content: "\e99d";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-css3 .path8:before {
+.tag-css .path8:before {
 	content: "\e99e";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-css3 .path9:before {
+.tag-css .path9:before {
 	content: "\e99f";
 	margin-left: -.708984375em;
 	color: #fff;
@@ -3151,60 +3151,60 @@ body[class*=' tag-']:before {
 	color: #fff;
 }
 
-.tag-html5 .path1:before {
+.tag-html .path1:before {
 	content: "\eb0e";
 	color: #e44d26;
 }
 
-.tag-html5 .path2:before {
+.tag-html .path2:before {
 	content: "\eb0f";
 	margin-left: -.708984375em;
 	color: #f16529;
 }
 
-.tag-html5 .path3:before {
+.tag-html .path3:before {
 	content: "\eb10";
 	margin-left: -.708984375em;
 	color: #ebebeb;
 }
 
-.tag-html5 .path4:before {
+.tag-html .path4:before {
 	content: "\eb11";
 	margin-left: -.708984375em;
 	color: #ebebeb;
 }
 
-.tag-html5 .path5:before {
+.tag-html .path5:before {
 	content: "\eb12";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-html5 .path6:before {
+.tag-html .path6:before {
 	content: "\eb13";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-html5 .path7:before {
+.tag-html .path7:before {
 	content: "\eb14";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-html5 .path8:before {
+.tag-html .path8:before {
 	content: "\eb15";
 	margin-left: -.708984375em;
 	color: #000;
 }
 
-.tag-html5 .path9:before {
+.tag-html .path9:before {
 	content: "\eb16";
 	margin-left: -.708984375em;
 	color: #fff;
 }
 
-.tag-html5 .path10:before {
+.tag-html .path10:before {
 	content: "\eb17";
 	margin-left: -.708984375em;
 	color: #fff;
