@@ -1,7 +1,7 @@
 {
   "name": "alepht",
   "version": "0.0.9",
-  "description": "The default theme for [Ghost](http://github.com/tryghost/ghost/).",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
