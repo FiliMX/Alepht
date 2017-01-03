@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    13. $Loop
+\*------------------------------------*/
+
+// Pagination
+.pagination
+    text-align center
+    padding 1rem 0
+    
+    // Pagination (prev & next)
+    .pagination__prev,
+    .pagination__next
+        color $color-gray-A
+        font-size 2rem
+    
+    // Pagination number
+    .pagination__number
+        color $color-gray-A
+        vertical-align top
+        margin 0.5rem
+        display inline-block
+        
+        .pagination__page
+            vertical-align top
+            color $color-gray-B
+
+
+
+
+
+// ----------- $ Media queries -----------
+
+@media $mq-desktop-xs
+
+    // Pagination
+    .pagination
+        
+        // Pagination (prev & next)
+        .pagination__prev,
+        .pagination__next
+            font-size 2.5rem
+        
+        // Pagination number
+        .pagination__number
+            font-size 1.2rem

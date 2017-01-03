@@ -1,0 +1,236 @@
+/*------------------------------------*\
+    12. $Post
+\*------------------------------------*/
+
+// Post & comments
+.write-post
+.comments
+    padding 1rem
+    
+// Post
+.write-post
+    
+    // Paragraphs & lists
+    p
+    ul
+    ol
+        color $color-gray-B
+        line-height 1.5rem
+        
+    // Links
+    a
+        color $color-blue-A
+        
+
+    // Images    
+    img
+        width 100%
+        
+    
+    // Strongs
+    strong
+        color $color-dark
+        
+    // Headings
+    h2
+    h3
+    h4
+    h5
+    h6
+        color $color-dark
+        
+    h2
+    h3
+        margin 1.9rem 0 0.5rem 0
+        line-height 2.4rem
+        
+    h2
+        font-size 1.8rem
+        
+    h3
+        font-size 1.4rem
+
+    // Blockquote
+    blockquote
+        color $color-gray-A
+        border-left 3px solid $color-gray-A
+        padding 0 0 0 0.5rem
+        margin 0
+        
+        p
+            color $color-gray-A
+    
+    // Break
+    hr
+        background-color $color-gray-A
+        
+    // Code (simple)
+    code
+        background-color $color-code
+        font-size 1rem
+        color $color-gray-B
+        padding 0.1rem
+        border-radius 3px
+
+    // Addthis
+    .addthis--top
+    .addthis--bottom
+        text-align center
+        
+        a
+            margin 0 0.8rem 0 0
+    
+    // Social title (share)
+    .social-title
+        display none
+        
+    // Special buttons
+    .custom-buttons
+        display flex
+        justify-content space-around
+        flex-wrap wrap
+        margin 1rem 0
+        text-align center
+        
+        // Button
+        .button
+            color white
+            padding 1rem 1.5rem
+            width 100%
+            margin 0.5rem 0
+            transition 0.3s
+            text-transform uppercase
+            box-sizing border-box
+            
+            &:nth-child(odd)
+                background-color $color-blue-A
+                color $color-light
+                
+            &:nth-child(even)
+                background-color $color-dark
+                color $color-light
+                
+            &:active
+                transform scale(0.9)
+
+
+
+// ----------- $Media queries -----------
+
+@media $mq-tablet-xs
+
+    // Post
+    .write-post
+        
+        // Headings
+        h2
+            font-size 2.1rem
+                
+        h3
+            font-size 1.6rem
+        
+        // Images
+        img
+            width auto
+            margin 0 auto
+            display block
+            max-width 550px
+            
+        // Special buttons
+        .custom-buttons
+            margin 1.5rem 0
+            
+            // Button
+            .button
+                width 30%
+        
+        // Addthis
+        .addthis--bottom
+            text-align left
+        
+        // Social title (share)
+        .social-title
+            display block
+            font-size 1.5rem
+            margin 2.5rem 0 1rem 0
+            color $color-dark
+
+@media $mq-tablet-sm
+    // Post
+    .write-post
+        
+        // Images
+        img
+            max-width 610px
+            
+@media $mq-tablet-md
+    
+    // Post & comments
+    .write-post
+    .comments
+        padding 2rem 0
+
+    // Post
+    .write-post
+        
+        // Paragraphs & lists
+        p
+        ul
+        ol
+            font-size 1.1rem
+
+        // Headings
+        h2
+            font-size 2.3rem
+            line-height 3.2rem
+        
+        h3
+            font-size 1.9rem
+            line-height 3.2rem
+            
+        // Images
+        img
+            max-width 680px
+            
+@media $mq-desktop-xs
+
+    // Post
+    .write-post
+        
+        // Paragraphs & lists
+        p
+        ul
+        ol
+            line-height 1.8rem
+        
+        // Headings
+        h2
+            font-size 2.5rem
+        
+        h3
+            font-size 2rem
+            
+        // Images
+        img
+            max-width 800px
+            
+        // Special buttons
+        .custom-buttons
+            margin 2.5rem 0
+            
+            // Button
+            .button
+                &:hover
+                    transform scale(1.1)
+        
+        // Social title (share)
+        .social-title
+            font-size 1.7rem
+        
+@media $mq-desktop-sm
+    // Post
+    .write-post
+        
+        // Images
+        img
+            max-width 750px

@@ -1,0 +1,158 @@
+/*------------------------------------*\
+    9. $Header
+\*------------------------------------*/
+
+// Header
+.header
+    color white
+    padding 1.2rem 1.3rem
+    position absolute
+    width 100%
+    box-sizing border-box
+    z-index 5
+
+// Header image
+.header__image
+    display inline-block
+    margin 0.2rem 0 0 0
+    .header__img
+        width 45px
+
+// Header title
+.header__title
+    font-size 1.6rem
+    margin 0
+    display inline-block
+    color $color-light
+
+// Header options (nav)
+.header__options
+    margin 0.4rem 0 0 0
+
+// Header list (ul)
+.header__list
+    
+    // Header item (li)
+    .header__item
+        display inline-block
+        
+        &:nth-child(-n+4)
+            display none
+            
+        &:nth-child(5)
+            margin 0 0.5rem 0 0
+        
+        // Header icon (nav)
+        .header__icon
+            font-size 1.4rem
+            display block
+            text-align center
+            color $color-light
+        
+        // Header text (nav)
+        .header__text
+            font-weight 300
+            font-size 0.7rem
+            color $color-light
+
+
+
+
+
+// ----------- $Image (logo) if -----------
+
+// If there is no image (logo)
+.header__title-logo--no
+    padding 0 0 0.2rem 0
+    border-bottom 3px solid $color-blue-A
+
+// If image (logo)
+.header__title-logo--yes
+    vertical-align top
+    margin 0.1rem 0 0 0.4rem
+
+
+
+
+
+// ----------- $Media queries -----------
+
+@media $mq-phone-sm
+
+    // Header image
+    .header__image
+        .header__img
+            width 50px
+    
+    // Header title
+    .header__title
+        font-size 1.8rem
+    
+    // Header options (nav)
+    .header__options
+        margin 0.6rem 0 0 0
+    
+    // Header list (ul)
+    .header__list
+        
+        // Header item (li)
+        .header__item
+                
+            &:nth-child(5)
+                margin 0 0.8rem 0 0
+            
+            // Header icon (nav)
+            .header__icon
+                font-size 1.5rem
+            
+            // Header text (nav)
+            .header__text
+                font-size 0.8rem
+
+    // If image (logo)
+    .header__title-logo--yes
+        margin 0.3rem 0 0 0.5rem
+                
+@media $mq-tablet-md
+
+    // Header options (nav)
+    .header__options
+        margin 0.4rem 0 0 0
+    
+    // Header list (ul)
+    .header__list
+        
+        // Header item (li)
+        .header__item
+        
+            &:nth-child(-n+4)
+                display inline-block
+                vertical-align top
+                margin 0.8rem 0.9rem 0 0
+                
+                .header__text
+                    font-size 1.1rem
+                
+            &:nth-child(4)
+                margin 0.8rem 1.5rem 0 0
+            
+@media $mq-desktop-xs
+    // Header list (ul)
+    .header__list
+        
+        // Header item (li)
+        .header__item
+        
+            &:nth-child(-n+4)
+                margin 0.8rem 1rem 0 0
+                
+            &:nth-child(4)
+                margin 0.8rem 2rem 0 0
+            
+            // Header icon & text (hover)
+            .header__option:hover > span
+            .header__option:hover > i
+                color $color-blue-A
+                cursor pointer
+                transition 0.3s
+            

@@ -1,0 +1,49 @@
+{{!-- Header --}}
+<header class='header' id='header'>
+    <div class='flex-between'>
+
+        {{!-- Logo --}}
+        <div class='header__logo'>
+            <a href='{{@blog.url}}'>
+                
+                {{!-- Image --}}
+                {{#if @blog.logo}}
+                    <figure class='header__image'>
+                        <img src='{{@blog.logo}}' alt='{{@blog.title}}' class='header__img'>
+                    </figure>
+                {{/if}}
+
+                {{!-- Title --}}
+                <p class='font-titillium header__title {{#if @blog.logo}}header__title-logo--yes{{else}}header__title-logo--no{{/if}}'>{{@blog.title}}</p>
+            </a>
+        </div>
+        
+        {{!-- Header Nav --}}
+        <nav class='nav header__options'>
+        
+            <ul class='header__list'>
+
+                {{!-- Navigation --}}
+                {{navigation}}
+                
+                {{!-- About-us --}}
+                <li class='header__item'>
+                    <a href='/nosotros' class='header__option'>
+                        <i class='header__icon icon-about-us'></i>
+                        <span class='header__text'>Nosotros</span>
+                    </a>
+                </li>
+                
+                {{!-- Contact --}}
+                <li class='header__item'>
+                    <a href='/contacto' class='header__option'>
+                        <i class='header__icon icon-contact'></i>
+                        <span class='header__text'>Contacto</span>
+                    </a>
+                </li>
+
+            </ul>
+
+         </nav>
+    </div>
+</header>

@@ -1,0 +1,40 @@
+{{!-- Tag block --}}
+{{#tag}}
+
+{{!-- Cover --}}
+<section class='flex-center-vertical cover cover-author {{#if tag.image}} cover--yes cover--author--yes' style='background-image: url({{tag.image}}){{else}} {{#if @blog.cover}}cover--yes cover--author--yes' style='background-image: url({{@blog.cover}}){{else}}cover--no{{/if}}{{/if}}'>
+    <div class='container-cover wrap-center'>
+        
+        {{!-- Tag header --}}
+        <header class='cover-author__header'>
+            
+            {{!-- Tag name --}}
+            <h1 class='cover-author__title cover-post__title'>
+                Artículos con el tag: <strong class='cover-tag__text'>{{name}}</strong>
+            </h1>
+            
+            {{!-- Tag posts --}}
+            <span class='cover-author__post'>
+                <i class='cover-author__icon icon-post'></i>
+                <span class='cover-author__text'>{{plural ../pagination.total empty='Sin artículos' singular='% Artículo' plural='% Artículos'}}</span>
+            </span>
+
+        </header> 
+        
+        {{!-- Tag section --}}
+        <section class='cover-author__bio'>
+
+            {{!-- Tag description --}}
+            {{#if description}}
+            <p class='cover-author__description'>{{description}}</p>
+            {{/if}}
+
+        </section>
+        
+        {{!-- Arrow-down (icon) --}}
+        <a href='#main' class='cover__icon cover-author__icon-arrow icon-arrow-down'></a>
+
+    </div>
+</section>
+
+{{/tag}}

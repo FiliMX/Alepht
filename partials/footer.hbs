@@ -1,0 +1,27 @@
+{{!-- Footer --}}
+<footer class='footer'>
+
+    {{!-- Social networks --}}
+    <section class='footer__social'>
+        <ul class='footer__list'>
+            
+            {{!-- Facebook --}}
+            <li class='footer__item'>
+                <a href='{{facebook_url}}' target='_blank' class='footer__icon icon-facebook'></a>
+            </li>
+            
+            {{!-- Twitter --}}
+            <li class='footer__item'>
+                <a href='{{twitter_url}}' target='_blank' class='footer__icon icon-twitter'></a>
+            </li>
+        </ul>
+    </section>
+    
+    {{!-- Copyright --}}
+    <section class='footer__copyright'>
+        <span class='footer__text'>
+            <a href='{{@blog.url}}' class='footer__link'>{{@blog.title}}</a> &copy; {{date format='YYYY'}} Todos los derechos reservados
+        </span>
+    </section>
+
+</footer>

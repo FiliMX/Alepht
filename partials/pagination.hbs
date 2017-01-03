@@ -1,0 +1,21 @@
+{{!-- Pagination --}}
+<div class='pagination' role='navigation'>
+    
+    {{!-- Pagination (prev) --}}
+    {{#if prev}}
+        <a class='pagination__prev' href='{{page_url prev}}'>
+            <i class='pagination__icon icon-arrow-left'></i>
+        </a>
+    {{/if}}
+    
+    {{!-- Pagination (number) --}}
+    <span class='pagination__number'>Página <strong class='pagination__page'>{{page}}</strong> de <strong class='pagination__page'>{{pages}}</strong></span>
+    
+    {{!-- Pagination (next) --}}
+    {{#if next}}
+        <a class='pagination__next' href='{{page_url next}}'>
+            <i class='pagination__icon icon-arrow-right'></i>
+        </a>
+    {{/if}}
+    
+</div>

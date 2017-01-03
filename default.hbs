@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{!-- Document Settings --}}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    {{!-- Page Meta --}}
+    {{!-- Title --}}
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
 
-    {{!-- Mobile Meta --}}
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{!-- Styles --}}
+    <link rel='stylesheet' type='text/css' href='{{asset "css/styles.css"}}' />
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:700|Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    {{!-- Document Settings --}}
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='HandheldFriendly' content='True' />
+    <meta name='description' content='{{meta_description}}' />
 
     {{!-- Brand icon --}}
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-
-    {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel='shortcut icon' href='{{asset "favicon.ico"}}'>
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
+
 </head>
-<body class="{{body_class}} nav-closed">
+<body class='{{body_class}} nav-closed'>
 
-    {{!-- The blog navigation links --}}
-    {{navigation}}
-
-    <div class="site-wrapper">
-
+    <div class='site-wrapper'>
+        
+        {{!-- Header template --}}
+        {{> 'header'}}
+        
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
+        
+        {{!-- Navigation-mobile template --}}
+        {{> 'navigation-mobile'}}
+        
+        {{!-- Arrow-down (icon) --}}
+        <a href='#header' class='arrow-up icon-arrow-up'></a>
 
-        {{!-- The tiny footer at the very bottom --}}
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+        {{!-- Footer template --}}
+        {{> 'footer'}}
 
     </div>
+    
+    {{!-- Google analytics --}}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      ga('create', 'UA-78964356-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    {{!-- Jquery --}}
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+
+    {{!-- Script (alepht) --}}
+    <script type='application/javascript' src='{{asset "js/index.js"}}'></script>
+
+    {{!-- Addthis --}}
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-586befeb72a94f90"></script> 
+
+
+
+
+    
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
-    {{!-- Fitvids makes video embeds responsive and awesome --}}
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    {{!-- The main JavaScript file for Casper --}}
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>

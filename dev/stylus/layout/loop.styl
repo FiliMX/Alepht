@@ -1,0 +1,142 @@
+/*------------------------------------*\
+    11. $Loop
+\*------------------------------------*/
+
+// Loop content
+.loop-content
+    padding 0 1.5rem
+  
+// Loop
+.loop
+    margin 2rem 0
+    
+    // Loop extra (SVG & date)
+    .loop__extra
+        display none
+
+// Loop header
+.loop__header
+    
+    // Loop tag
+    .loop__tag
+        color $color-blue-B
+        font-weight 700
+        display inline-block
+        margin 0 0.5rem 0.5rem 0
+        text-transform capitalize
+    
+    // Loop title (tag)
+    .loop__title
+        margin 0 0 0.7rem 0
+        line-height 2.2rem
+        font-size 2rem
+        
+        // Loop link (tag)
+        .loop__link
+            color $color-dark
+    
+    // Loop author
+    .loop__author
+        display inline-block
+        
+        // Loop img (author)
+        .loop__img
+            width 33px
+            height 33px
+            border-radius 50%
+            
+        // Loop name (author)
+        .loop__name
+            color $color-gray-A
+            display inline-block
+            vertical-align top
+            margin 0.4rem 0 0 0.3rem
+            text-transform uppercase
+            font-weight 300
+            transition 0.3s
+            
+            &:hover
+                color $color-gray-C
+
+// Loop words
+.loop__words
+    color $color-gray-B
+    
+    // Loop test (words)
+    .loop__text
+        line-height 1.5rem
+
+
+
+
+
+// ----------- $Media queries -----------
+
+@media $mq-tablet-xs
+    
+    // Loop header
+    .loop__header
+        .loop__title
+            .loop__link
+                font-size 2.2rem
+                
+@media $mq-tablet-sm
+    
+    // Loop header
+    .loop__header
+        .loop__title
+            .loop__link
+                font-size 2.5rem
+                
+@media $mq-tablet-md
+
+    // Loop words
+    .loop__words
+        .loop__text
+            font-size 1.1rem
+            font-weight 300
+            
+@media $mq-desktop-xs
+
+    // Loop
+    .loop
+        padding 0 0 0 2rem
+        border-left 1px solid $color-gray-A
+        margin 6.5rem 0
+    
+    // Loop header
+    .loop__header
+        
+        // Loop tag
+        .loop__tag
+            margin 0 0.5rem 1.5rem 0
+            transition 0.3s
+            
+            &:hover
+                color $color-blue-D
+            
+@media $mq-desktop-sm
+
+    // Loop
+    .loop
+        position relative
+        
+        // Loop extra (SVG & date)
+        .loop__extra
+            display block
+            position absolute
+            left -8rem
+            top 1rem
+            
+            // Loop date
+            .loop__time
+                color $color-gray-A
+                display block
+                letter-spacing 2px
+            
+            // Loop SVG
+            .loop__svg
+                font-size 2.5rem
+                margin 1rem 0 0 0
+                display block
+                text-align right

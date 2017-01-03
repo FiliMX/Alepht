@@ -1,0 +1,388 @@
+/*------------------------------------*\
+    10. $Cover
+\*------------------------------------*/
+
+
+// ----------- $Cover default -----------
+
+// Cover
+.cover
+    height 100vh
+    color $color-light
+    z-index 4
+    
+    // Cover title
+    .cover__title
+        font-size 2.5rem
+        padding 0 0 0 2rem
+        
+    // Cover description
+    .cover__description
+        text-transform uppercase
+        font-weight 300
+        font-size 0.9rem
+        line-height 1.3rem
+        margin 0 0 4rem 0 
+        padding 0 2rem
+        
+    // Cover icon (arrow)
+    .cover__icon
+        color $color-light
+        display block
+        text-align center
+        font-size 2rem
+        animation float 1.8s ease-out infinite
+        
+
+    // Cover icon (animation)
+    @keyframes float
+        50%
+            transform translate(0, 20px)
+            
+// Cover container
+.container-cover
+    width 100%
+    box-sizing border-box
+
+
+
+
+
+// ----------- $Cover author, post & tag -----------
+
+// Cover (author)
+.cover-author
+    position relative
+        
+// Cover header (author)
+.cover-author__header
+    
+    // Cover image (author)
+    .cover-author__image
+        display none
+        
+    // Cover title & post (author)
+    .cover-author__title
+    .cover-author__post
+        padding 0 0 0 1.5rem
+        
+    // Cover title (author)
+    .cover-author__title
+        font-size 2rem
+        margin 0 0 0.5rem 0
+    
+    // Cover title (post)
+    .cover-post__title
+        line-height 2.5rem
+        padding 0 0.8rem 0 1.5rem
+        margin 0 0 0.8rem 0
+        
+        // Cover (tag)
+        .cover-tag__text
+            color $color-blue-A
+            text-transform capitalize
+        
+    // Cover post number (author)
+    .cover-author__post
+        .cover-author__icon
+            font-size 1.1rem
+            margin 0 0.2rem 0 0
+            
+        .cover-author__text
+            vertical-align 11%
+    
+    // Cover date (post)
+    .cover-post__date
+        margin 0 0 1rem 0
+        display inline-block
+               
+// Cover biography (author) 
+.cover-author__bio
+    .cover-author__description
+        padding 0 1.5rem
+        font-weight 300
+        font-size 0.9rem
+    
+// Cover footer (author)  
+.cover-author__footer
+    
+    // Cover location, website, facebook, twitter (author) 
+    .cover-author__location
+    .cover-author__website
+    .cover-author__facebook
+    .cover-author__twitter
+        padding 0 0 0 1.5rem
+        display block
+        margin 0 0 0.5rem 0
+        
+        .cover-author__icon
+            font-size 1.1rem
+            margin 0 0.2rem 0 0
+            
+        .cover-author__text
+            vertical-align 11%
+            
+        .cover-author__link
+            color $color-blue-B
+            vertical-align 11%
+            display inline-block
+            padding 0 0 0.1rem 0
+            border-bottom 1px dashed $color-blue-B
+            
+    // Cover website (author)     
+    .cover-author__website
+        margin 0 0 1.5rem 0
+    
+    // Cover twitter (author) 
+    .cover-author__twitter
+        margin 0 0 2.5rem 0
+        
+// Cover container (author)
+.container-cover-author
+    position relative
+
+
+
+
+
+// ----------- $Cover post -----------
+
+// Cover footer (post)
+.cover-post__footer
+    .cover-post__image
+        display inline-block
+        padding 0 0 0 1.5rem
+        margin 0 0 2rem 0
+        
+        .cover-post__img
+            width 33px
+            height 33px
+            border-radius 50%
+            
+        .cover-post__name
+            color $color-gray-A
+            display inline-block
+            vertical-align top
+            margin 0.4rem 0 0 0.3rem
+            font-weight 300
+
+
+
+
+
+// ----------- $Cover if -----------
+
+// If there is no cover
+.cover--no
+    background-color $color-dark
+    
+// If cover
+.cover--yes
+    background-size cover
+    position relative
+    
+    &:before
+        content ''
+        background-color rgba($color-dark,0.8)
+        position absolute
+        width 100vw
+        height 100vh
+        z-index -1
+
+
+
+
+// ----------- $Media queries -----------
+
+@media $mq-phone-md
+
+    // Cover
+    .cover
+        
+        // Cover title
+        .cover__title
+            font-size 3.5rem
+            margin 0 0 1.5rem 0
+            
+        // Cover icon (arrow)
+        .cover__icon
+            font-size 2.5rem
+    
+    // Cover header (author)
+    .cover-author__header
+        
+        // Cover title (author)
+        .cover-author__title
+            font-size 2.5rem
+            margin 0 0 0.2rem 0
+        
+        // Cover post number (author)
+        .cover-author__post
+            margin 0 0 1.5rem 0
+            display inline-block
+        
+        // Cover post title (author)
+        .cover-post__title
+            margin 0 0 1rem 0
+            line-height 3rem
+    
+    // Cover biography (author)
+    .cover-author__bio
+        .cover-author__description
+            margin 0 0 1.5rem 0
+            
+@media $mq-phone-lg
+
+    // Cover
+    .cover
+        
+        // Cover description
+        .cover__description
+            font-size 1rem
+    
+    // Cover biography (author)
+    .cover-author__bio
+        .cover-author__description
+            font-size 1rem
+    
+    // Cover footer (author)
+    .cover-author__footer
+        .cover-author__location
+        .cover-author__website
+        .cover-author__facebook
+        .cover-author__twitter
+            
+            .cover-author__icon
+                font-size 1.2rem
+                
+            .cover-author__text
+                font-size 1.1rem
+                
+            .cover-author__link
+                font-size 1.1rem
+            
+@media $mq-tablet-sm
+
+    // Cover
+    .cover
+        
+        // Cover title
+        .cover__title
+            font-size 4rem
+            
+        // Cover description
+        .cover__description
+            font-size 1.1rem
+            line-height 1.5rem
+        
+        // Cover icon (arrow)
+        .cover__icon
+            font-size 2.8rem
+    
+    // Cover header (author)
+    .cover-author__header
+        .cover-author__title
+            font-size 3rem
+        
+        // Cover post number (author)
+        .cover-author__post
+            .cover-author__icon
+                font-size 1.2rem
+                
+            .cover-author__text
+                font-size 1.1rem
+        
+        // Cover date (post)
+        .cover-post__date
+            font-size 1.1rem
+    
+    // Cover biography (author)
+    .cover-author__bio
+        .cover-author__description
+            font-size 1.1rem
+            line-height 1.5rem
+            
+@media $mq-desktop-xs
+
+    // Cover
+    .cover
+        text-align center
+        
+        // Cover title
+        .cover__title
+            font-size 5rem
+            padding 0
+    
+    // Cover (author)
+    .cover-author
+        text-align left
+        height 60vh
+        
+        // Cover icon (arrow)
+        .cover-author__icon-arrow
+            display none
+    
+    // Cover footer (author)
+    .cover-author__footer
+        .cover-author__location
+        .cover-author__website
+        .cover-author__facebook
+        .cover-author__twitter
+            display inline-block
+            
+            // Cover link (author)
+            .cover-author__link
+                transition 0.3s
+                
+                &:hover
+                    color $color-blue-A
+                    border-bottom 1px dashed $color-blue-A
+
+    // If cover (author)
+    .cover--author--yes
+        &:before
+            height 60vh
+
+    // Cover footer (post)
+    .cover-post__footer
+        position absolute
+        bottom 0
+        right 2rem
+        
+        // Cover image (post)
+        .cover-post__image
+            .cover-post__img
+                float right
+                width 75px
+                height 75px
+                opacity 0.8
+            
+            // Cover name (post)
+            .cover-post__name
+                margin 1.9rem 0.5em 0 0
+                font-size 1.2rem
+                color $color-light
+                transition 0.3s
+                
+                &:hover
+                    color $color-blue-B
+            
+@media $mq-desktop-sm
+    
+    // Cover header (author)
+    .cover-author__header
+        border-left 4px solid $color-blue-B
+        
+        // Cover image (author)
+        .cover-author__image
+            display block
+            position absolute
+            top 1.5rem
+            left -6rem
+            opacity 0.8
+            
+            // Cover tag-img (author)
+            .cover-author__img
+                width 75px
+                height 75px
+                border-radius 50%

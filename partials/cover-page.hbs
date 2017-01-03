@@ -1,0 +1,19 @@
+{{!-- Cover --}}
+<section class='flex-center-vertical cover cover-author {{#if image}} cover--yes cover--author--yes' style='background-image: url({{image}}){{else}}cover--no{{/if}}'>
+    <div class='container-cover wrap-center'>
+        
+        {{!-- Page header --}}
+        <header class='cover-author__header'>
+            
+            {{!-- Page title --}}
+            <h1 class='cover-author__title cover-post__title'>
+                {{title}}
+            </h1>
+
+        </header>
+        
+        {{!-- Arrow-down (icon) --}}
+        <a href='#main' class='cover__icon cover-author__icon-arrow icon-arrow-down'></a>
+
+    </div>
+</section>
