@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     rename = require('gulp-rename'),
-    cmq  = require('gulp-combine-media-queries'),
+    cmq  = require('gulp-combine-mq'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCss = require('gulp-minify-css'),
     concat = require('gulp-concat'),
