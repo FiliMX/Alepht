@@ -2,7 +2,7 @@
 
 **Versión de Ghost** 0.11.3
 <br />
-**Versión de alepht** 1.0.0
+**Versión de alepht** 1.0.1
 
 
 > Esta guía esta hecha especialmente para **Mario**, **Sergio**, **Juan** o cualquier persona externa de habla hispana.
