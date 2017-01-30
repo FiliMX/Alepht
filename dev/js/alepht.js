@@ -38,10 +38,10 @@ disqus = function (newIdentifier, newUrl, newTitle) {
     if ($('#disqus_thread').length) {
         if (typeof DISQUS === 'undefined') {
 
-            var disqus_shortname = 'alepht',
-                disqus_identifier = newIdentifier,
-                disqus_url = newUrl,
-                disqus_title = newTitle;
+            var disqus_shortname = 'cristal-code';
+            var disqus_identifier = newIdentifier;
+            var disqus_url = newUrl;
+            var disqus_title = newTitle;
 
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -61,4 +61,4 @@ disqus = function (newIdentifier, newUrl, newTitle) {
     }
 };
 
-disqus(window.location.href, window.location.href, $('.post-title').text());
+disqus(window.location.href, window.location.href, $('#post-text').text());
