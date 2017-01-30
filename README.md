@@ -1,8 +1,8 @@
 # Guía para Alepht
 
-**Versión de Ghost** 0.8.0
+**Versión de Ghost** 0.11.3
 <br />
-**Versión de alepht** 0.0.9
+**Versión de alepht** 1.0.0
 
 
 > Esta guía esta hecha especialmente para **Mario**, **Sergio**, **Juan** o cualquier persona externa de habla hispana.
