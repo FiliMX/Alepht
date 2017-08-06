@@ -1,8 +1,8 @@
 # Guía para Alepht
 
-**Versión de Ghost** 0.11.3
+**Versión de Ghost** 1.0.0
 <br />
-**Versión de alepht** 1.0.1
+**Versión de alepht** 1.0.2
 
 
 > Esta guía esta hecha especialmente para **Mario**, **Sergio**, **Juan** o cualquier persona externa de habla hispana.
@@ -102,7 +102,7 @@ Guía para el uso adecuado de los tags.
 
 Para definir los tags de nuestro artículo hay que empezar por el tema principal (Go, JavaScript, Redis, etc.) y posteriormente la categoría a la que pertenece (Frontend, Backend, DevOps, Base de datos)
 
-> Importante: Los tags deben de estar en minúsculas 
+> Importante: Los tags deben de estar en minúsculas
 
 Esto simplemente es para tener un control y orden de todos los artículos y los iconos (SVG) no se agrupen.
 
@@ -113,7 +113,7 @@ Guía para el uso adecuado de los iconos.
 
 Para que un icono (SVG) sea visible es muy importante que el tag se llame de la siguiente manera:
 
-Nombre del tag | Icono 
+Nombre del tag | Icono
 ------------ | -------------
 android | android
 angular | angular
@@ -226,5 +226,58 @@ xamarin | xamarin
 yeoman | yeoman
 
 ---
+      | meteor
+windows          | windows
+modernizr        | modernizr
+momentjs         | momentJS
+mongodb          | mongoDB
+mysql            | mysql
+neo4j            | neo4j
+nginx            | nginx
+nodejs           | nodejs
+npm              | npm
+opensource       | opensource
+oracle           | oracle
+paypal           | paypal
+phoenix          | phoenix
+polymer          | polymer
+postcss          | postCSS
+postgresql       | postgresql
+pug              | pug (Jade)
+rackspace        | rackspace
+raspberry-pi     | raspberry Pi
+react            | reactJS
+reapp            | reapp
+redhat           | redhat
+redis            | redis
+redux            | redux
+require          | requireJS
+rethinkdb        | rethinkDB
+sails            | sailsJS
+sass             | sass
+sketch           | sketch
+socketio         | socket.IO
+stylus           | stylus
+suse             | openSUSE
+symfony          | symfony
+terminal         | terminal
+travis           | travis
+ubuntu           | ubuntu
+unity            | unity
+vim              | vim
+visual-studio    | visual studio
+w3c              | w3c
+webcomponents    | webcomponents
+wordpress        | wordpress
+xamarin          | xamarin
+yeoman           | yeoman
 
+--------------------------------------------------------------------------------
 
+```
+  | meteor
+```
+
+windows | windows modernizr | modernizr momentjs | momentJS mongodb | mongoDB mysql | mysql neo4j | neo4j nginx | nginx nodejs | nodejs npm | npm opensource | opensource oracle | oracle paypal | paypal phoenix | phoenix polymer | polymer postcss | postCSS postgresql | postgresql pug | pug (Jade) rackspace | rackspace raspberry-pi | raspberry Pi react | reactJS reapp | reapp redhat | redhat redis | redis redux | redux require | requireJS rethinkdb | rethinkDB sails | sailsJS sass | sass sketch | sketch socketio | socket.IO stylus | stylus suse | openSUSE symfony | symfony terminal | terminal travis | travis ubuntu | ubuntu unity | unity vim | vim visual-studio | visual studio w3c | w3c webcomponents | webcomponents wordpress | wordpress xamarin | xamarin yeoman | yeoman
+
+--------------------------------------------------------------------------------

@@ -2,32 +2,32 @@
 {{#author}}
 
 {{!-- Cover --}}
-<section class='flex-center-vertical cover cover-author {{#if cover}} cover--yes cover--author--yes' style='background-image: url({{cover}}){{else}}cover--no{{/if}}'>
+<section class='flex-center-vertical cover cover-author {{#if cover_image}} cover--yes cover--author--yes' style='background-image: url({{cover_image}}){{else}}cover--no{{/if}}'>
     <div class='container-cover container-cover-author wrap-center'>
-        
+
         {{!-- Author header --}}
         <header class='cover-author__header'>
-            
+
             {{!-- Author image --}}
-            {{#if image}}
+            {{#if profile_image}}
             <figure class='cover-author__image'>
-                <img src='{{image}}' alt='{{name}}' class='cover-author__img'>
+                <img src='{{img_url profile_image}}' alt='{{name}}' class='cover-author__img'>
             </figure>
             {{/if}}
-            
+
             {{!-- Author name --}}
             <h1 class='cover-author__title'>
                 {{name}}
             </h1>
-            
+
             {{!-- Author posts --}}
             <span class='cover-author__post'>
                 <i class='cover-author__icon icon-post'></i>
                 <span class='cover-author__text'>{{plural ../pagination.total empty='Sin artículos' singular='% Artículo' plural='% Artículos'}}</span>
             </span>
 
-        </header> 
-        
+        </header>
+
         {{!-- Author section --}}
         <section class='cover-author__bio'>
 
@@ -37,7 +37,7 @@
             {{/if}}
 
         </section>
-        
+
         {{!-- Author footer --}}
         <footer class='cover-author__footer'>
 
@@ -48,7 +48,7 @@
                     <span class='cover-author__text'>{{location}}</span>
                 </span>
             {{/if}}
-            
+
             {{!-- Author website --}}
             {{#if website}}
                 <span class='cover-author__website'>
@@ -56,7 +56,7 @@
                     <a class='cover-author__link' href='{{website}}' target='_blank'>{{website}}</a>
                 </span>
             {{/if}}
-            
+
             {{!-- Author facebook --}}
             {{#if facebook}}
                 <span class='cover-author__facebook'>
@@ -64,7 +64,7 @@
                     <a class='cover-author__link' href='{{facebook_url}}' target='_blank'>Facebook</a>
                 </span>
             {{/if}}
-            
+
             {{!-- Author twitter --}}
             {{#if twitter}}
                 <span class='cover-author__twitter'>
@@ -74,7 +74,7 @@
             {{/if}}
 
         </footer>
-        
+
         {{!-- Arrow-down (icon) --}}
         <a href='#' class='cover__icon cover-author__icon-arrow icon-arrow-down'></a>
 

@@ -2,14 +2,14 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     rename = require('gulp-rename'),
-    cmq  = require('gulp-combine-mq'),
+    cmq = require('gulp-combine-mq'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCss = require('gulp-minify-css'),
     concat = require('gulp-concat'),
-    minify = require('gulp-minify');
-    path = {},
-    stylusTasks = ['styles'];
-    transformCSSTasks = ['cmq', 'autoprefixer'];
+    minify = require('gulp-minify'),
+    stylusTasks = ['styles'],
+    transformCSSTasks = ['cmq', 'autoprefixer'],
+    path = {};
 
 // ----------- $CSS -----------
 
@@ -20,13 +20,13 @@ path.watch = {
 };
 
 // Task (watch)
-gulp.task('watch', function () {
+gulp.task('watch', function() {
     gulp.watch(path.watch.stylus, stylusTasks);
     gulp.watch(path.watch.transformCSS, transformCSSTasks);
 });
 
 // Task (styles)
-gulp.task('styles', function () {
+gulp.task('styles', function() {
     gulp
         .src('./dev/stylus/main.styl')
         .pipe(stylus({
@@ -37,16 +37,16 @@ gulp.task('styles', function () {
 });
 
 // Task (combine media queries)
-gulp.task('cmq', function () {
-  gulp.src('./dev/css/*.css')
-    .pipe(cmq({
-      log: true
-    }))
-    .pipe(gulp.dest('./dev/css/'));
+gulp.task('cmq', function() {
+    gulp.src('./dev/css/*.css')
+        .pipe(cmq({
+            log: true
+        }))
+        .pipe(gulp.dest('./dev/css/'));
 });
 
 // Task (autoprefixer)
-gulp.task('autoprefixer', function () {
+gulp.task('autoprefixer', function() {
     return gulp.src('./dev/css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -55,10 +55,6 @@ gulp.task('autoprefixer', function () {
         .pipe(minifyCss())
         .pipe(gulp.dest('./assets/css/'));
 });
-
-
-
-
 
 // ----------- $JavaScript -----------
 
@@ -72,13 +68,13 @@ gulp.task('concat', function() {
 });
 
 // Task (minify)
-gulp.task('minify', function(){
+gulp.task('minify', function() {
     gulp
         .src('./assets/js/index.js')
         .pipe(minify({
-            ext:{
-                src:'-debug.js',
-                min:'.js'
+            ext: {
+                src: '-debug.js',
+                min: '.js'
             },
             exclude: ['tasks'],
             ignoreFiles: ['.combo.js', '-min.js']
