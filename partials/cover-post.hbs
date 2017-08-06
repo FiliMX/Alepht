@@ -1,37 +1,37 @@
 {{!-- Cover --}}
-<section class='flex-center-vertical cover cover-author {{#if image}} cover--yes cover--author--yes' style='background-image: url({{image}}){{else}}cover--no{{/if}}'>
+<section class='flex-center-vertical cover cover-author {{#if feature_image}} cover--yes cover--author--yes' style='background-image: url({{img_url feature_image}}){{else}}cover--no{{/if}}'>
     <div class='container-cover wrap-center'>
-        
+
         {{!-- Post header --}}
         <header class='cover-author__header'>
-            
+
             {{!-- Post title --}}
             <h1 class='cover-author__title cover-post__title'>
                 {{title}}
             </h1>
-            
+
             {{!-- Post date --}}
             <time class='cover-author__post cover-post__date' datetime='{{date format="YYYY-MM-DD"}}'>{{date format='DD MMM YYYY'}}</time>
 
 
         </header>
-        
+
         {{!-- Post footer --}}
         <footer class='cover-post__footer'>
-            
+
             {{!-- Author block --}}
             {{#author}}
-                
+
                 {{!-- Author url --}}
                 <a href='{{url}}'>
-                    
+
                     <figure class='cover-post__image'>
 
                         {{!-- Author image --}}
-                        {{#if image}}
-                        <img src='{{image}}' alt='{{name}}' class='cover-post__img'>
+                        {{#if profile_image}}
+                        <img src='{{img_url profile_image}}' alt='{{name}}' class='cover-post__img'>
                         {{/if}}
-                        
+
                         {{!-- Author name --}}
                         <figcaption class='cover-post__name'>
                             <span class='cover-post__text'>{{name}}</span>
@@ -43,7 +43,7 @@
             {{/author}}
 
         </footer>
-        
+
         {{!-- Arrow-down (icon) --}}
         <a href='#main' class='cover__icon cover-author__icon-arrow icon-arrow-down'></a>
 
